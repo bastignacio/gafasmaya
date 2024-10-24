@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", async function () {
     // Cargar Navbar
-    await cargarContenido("navbar", "/scr/pages/modulos/navbar.html", "navbar-container");
+    await cargarContenido("navbar", "scr/pages/modulos/navbar.html", "navbar-container");
 
     // Cargar Footer
-    await cargarContenido("footer", "/scr/pages/modulos/footer.html", "footer-container");
+    await cargarContenido("footer", "scr/pages/modulos/footer.html", "footer-container");
 });
 
 async function cargarContenido(clave, url, contenedorId) {

@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", async function () {
     // Cargar Navbar con cache
-    await cargarContenidoConCache("navbar", "/scr/pages/modulos/navbar.html", "navbar-container");
+    await cargarContenidoConCache("navbar", "scr/pages/modulos/navbar.html", "navbar-container");
 
     // Cargar Sidebar con cache
-    await cargarContenidoConCache("sidebar", "/scr/pages/modulos/sidebar.html", "sidebar-container");
+    await cargarContenidoConCache("sidebar", "scr/pages/modulos/sidebar.html", "sidebar-container");
 });
 
 async function cargarContenidoConCache(clave, url, contenedorId) {
