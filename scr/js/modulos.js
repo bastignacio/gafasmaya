@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", async function () {
     // Cargar Navbar con cache
-    await cargarContenidoConCache("navbar", "scr/pages/modulos/navbar.html", "navbar-container");
+    await cargarContenidoConCache("navbar", "/scr/pages/modulos/navbar.html", "navbar-container");
+    // await cargarContenidoConCache("navbar", "/gafasmaya/scr/pages/modulos/navbar.html", "navbar-container");
 
-    // Cargar Sidebar con cache
-    await cargarContenidoConCache("sidebar", "scr/pages/modulos/sidebar.html", "sidebar-container");
+
+    // Cargar Footer con cache
+    await cargarContenidoConCache("footer", "/scr/pages/modulos/footer.html", "footer-container");
+    // await cargarContenidoConCache("footer", "/gafasmaya/scr/pages/modulos/footer.html", "footer-container");
+
 });
 
 async function cargarContenidoConCache(clave, url, contenedorId) {
