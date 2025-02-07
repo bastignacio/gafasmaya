@@ -1,0 +1,112 @@
+/* Evita el desplazamiento horizontal */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Evitamos que el contenido quede tapado por el navbar y el footer */
+body {
+  padding-top: 60px;
+  /* Altura del navbar */
+  padding-bottom: 60px;
+  /* Altura del footer */
+}
+
+/* Sidebar fijo en la izquierda */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  bottom: 60px;
+  left: 0;
+  width: 320px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Resumen del carrito fijo en la derecha */
+.cart-summary {
+  position: fixed;
+  top: 60px;
+  bottom: 60px;
+  right: 0;
+  width: 320px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Contenedor principal ajustado */
+.main-content {
+  margin-left: 320px;
+  /* Espacio para el sidebar */
+  margin-right: 320px;
+  /* Espacio para el carrito */
+  padding: 20px;
+}
+
+/* Centrar el carrusel */
+.carousel {
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+}
+
+/* Miniaturas */
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 80px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  line-height: 60px;
+  background-color: #f8f9fa;
+}
+
+.descripcionTitulo {
+  font-size: 22pt;
+}
+
+.descripcion {
+  margin-top: 10px;
+  font-size: 16pt;
+}
+
+.descripcionProducto {
+  font-size: 13pt;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    flex-direction: column;
+}
+
+.quantity-control {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.quantity-input {
+width: 50px;
+text-align: center;
+margin: 10px;
+}
