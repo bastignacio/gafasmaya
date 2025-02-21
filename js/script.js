@@ -22,7 +22,7 @@ function updateStockDisplay(productId) {
   }
 }
 
-fetch('/stock.json')
+fetch('stock.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('Error al cargar el archivo JSON: ' + response.status);
