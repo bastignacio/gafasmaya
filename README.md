@@ -19,6 +19,9 @@ El carrito de compras desaparecerá solamente si es vaciado de manera manual o b
 
 ## Ultimas actualizaciónes
 
+### 21/02/2025
+- Se agregó el stock disponible de los modelos Sutro
+
 ### 07/02/25:
 
 - Se incorporó script para validar la cantidad de unidades disponibles de productos tipo. Este script rescata la información desde un json.
