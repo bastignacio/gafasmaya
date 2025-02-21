@@ -22,7 +22,7 @@ function updateStockDisplay(productId) {
   }
 }
 
-fetch('stock.json')
+fetch('/stock.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('Error al cargar el archivo JSON: ' + response.status);
@@ -37,7 +37,14 @@ fetch('stock.json')
     // MODIFICAR ACÁ AL AGREGAR MAS PRODUCTOS.
     // ---- //
 
+    updateStockDisplay('SutroBlancoAzul');
+    updateStockDisplay('SutroBlancoRojo');
+    updateStockDisplay('SutroDoradoDorado');
+    updateStockDisplay('SutroNegroAzul');
+    updateStockDisplay('SutroNegroDorado');
     updateStockDisplay('SutroNegroRojo');
+    updateStockDisplay('SutroNegroVerde');
+    updateStockDisplay('SutroRosadoRojo');
   })
   .catch(error => console.error('Error al cargar el stock:', error));
 
